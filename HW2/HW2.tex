@@ -1,0 +1,218 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+
+% info for header block in upper right hand corner
+\name{Box#: \underline{\hspace{1cm}}(Name On Back)}
+\class{Math 60: Section \underline{\hspace{1cm}}}
+\assignment{Assignment 2}
+\duedate{Due Date: 4/13/18}
+
+\begin{document}
+
+\problemlist{
+Section 2.3:  R17, R23, 24, R31, 33, R38, 40, 42
+\\Section 2.4: R3, 5, 17**, R22, 23, 29a
+\\Section 2.5: R2, R4, 7, R7, R13, 14, R21, 24, 34, R43
+\\Section 2.6: R5, 6, R11, 12, R15, 18, R21
+}
+
+\begin{problem}
+Section 2.3: 
+\\\textit{Find the gradient $\nabla$f(\textbf{\mathbf{a}}), where f and \textbf{\mathbf{a}} are given in Exercises 18-24}
+\\
+24. $f(x,y,z)=\frac{x+y}{e^z}$
+\end{problem}
+
+\newpage
+
+\begin{problem}
+\textit{In Exercises 26-33, find the matrix D}\textbf{f}(\textbf{a})\textit{ if partial derivatives, where }\textbf{f}\textit{ and} \textbf{a} \textit{ are as indicated}
+\\
+33. \textbf{f}$(s, t)=(s^2, st, t^2)$, \textbf{a}$=(-1,1)$
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+40. Find the equations for the planes tangent to $z=x^2-6x+y^3$ that are parallel to the plane $4x-12y+z=7$.
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+42. Suppose that you have the following information concerning a differentiable function $f$:\\
+$f(2,3)=12$,$f(1.98,3)=12.1$,$f(2,3.01)=2.98$
+\begin{enumerate}
+    \item[(a)] Give an approximation for the plane tangent to the graph of $f$ at $(2,3,12$
+    \item[(b)] Use the result of part (a) to estimate $f(1.98, 2.98)$
+\end{enumerate}
+
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+Section 2.4:
+\\
+\textit{Verify the product and quotient rules(Proposition 4.2) for the pairs of functions given in Exercises 5-8.}
+\\
+5. $f(x,y)=x^2y+y^3$, $g(x,y)=\frac{x}{y}$
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+\textit{For the functions given in Exercises 9-17 determine all second-order partial derivatives (include mixed partials).}
+\\
+17.$f(x,y, z)=x^2e^y+e^{2z}$
+
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+23. Let $f(x,y)=y^{3x}$. Give general formulas for $\partial^nf/\partial x^n$, $\partial^nf/\partial y^n$, and $\partial^nf/\partial z^n$, where $n\geq0$.
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+29a. The three-dimensional \textbf{heat equation} is the partial differential equation
+\begin{equation}
+    k(\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}+\frac{\partial^2 T}{\partial z^2})=\frac{\partial T}{\partial t}
+\end{equation}
+where $k$ is a positive constant. It models the temperature $T(x, y, z, t$ at the point $(x,y,z)$ and time $t$ of a body in space.
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+
+\begin{enumerate}
+    \item[(a)] We examine a simplified version of the heat equation. Consider a straight wire "coordinatized" by $x$. Then the temperature $T(x,t)$ at time $t$ and position $x$ along the wire is modeled by the one-dimensional heat equation
+    \begin{equation}
+        k \frac{\partial^2 T}{\partial x^2}=\frac{\partial T}{\partial t}
+    \end{equation}
+    Show that the function $T(x,t)=e^{-kt}cos(x)$ satisfies this equation. Note that if $t$ is held constant at value $t_0$. Graph the curves $z=T(x, T_0)$ for $t_0=0, 1, 10$, and use them to understand the graph of the surface $z=T(x,t)$ for $t\geq0$. Explain what happens to the temperature of the wire after a long period of time.
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+Section 2.5:\\
+7. Suppose that the following function is used to model
+the monthly demand for bicycles:
+\begin{equation}
+    P(x,y)=200+20\sqrt{0.1x+10}-12\sqrt[3]{y}
+\end{equation}
+In this formula, $x$ represents the price (in dollars
+per gallon) of automobile gasoline and $y$ represents the selling price (in dollars) of each bicycle.
+Furthermore, suppose that the price of gasoline $t$ months from now will be
+\begin{equation}
+    x=1+0.1t-\cos\left(\frac{\pi t}{6}\right)
+\end{equation}
+and the price of each bicycle will be 
+\begin{equation}
+    y=200+2t-\sin\left(\frac{\pi t}{6}\right)
+\end{equation}
+At what rate will the monthly demand for bicycles be changing six months from now?
+\end{problem}
+\newpage
+\begin{problem}
+14. Suppose that $z = f (x + y, x - y)$ has continuous partial derivatives with respect to $u = x + y$ and $v =x - y$. Show that
+\begin{equation}
+    \frac{\partial w}{\partial u}
+    \frac{\partial w}{\partial u} = \left(\frac{\partial w}{\partial u}\right)^2-\left(\frac{\partial w}{\partial u}\right)^2
+\end{equation}
+
+\end{problem}
+
+\newpage
+
+\begin{problem}
+\textit{In Exercises 19–27, calculate} D(f ◦ g) \textit{in two ways: (a) by first
+evaluating }f ◦ g \textit{and (b) by using the chain rule and the derivative matrices D}\textbf{f}\textit{and D}\textbf{g}
+\\
+24. \textbf{f}$(x,y,z)=(x^2y + y^2z, xyz, e^z)$, \textbf{g}$(t) = (t - 2, 3t + 7, t^3 )$
+\end{problem}
+% Add pairs of problems and solutions as needed
+
+\newpage
+
+
+\begin{problem}
+34. Suppose that $y$ is defined implicitly as a function $y(x)$
+by an equation of the form
+\begin{equation}
+    F(x, y) = 0
+\end{equation}
+(For example, the equation $x^3 - y^2 = 0$ defines $y$ as
+two functions of $x$, namely, $y = x^{3/2}$ and $y = -x^{3/2}$ .
+The equation $sin(x y) - x^2y^7 + e^y = 0$, on the other
+hand, cannot readily be solved for $y$ in terms of $x$. See
+the end of section 2.6 for more about implicit functions.)
+
+\begin{enumerate}
+    \item[(a)] Show that if $F$ and $y(x)$ are both assumed to be
+differentiable functions, then
+\begin{equation}
+    \frac{dy}{dx}=-\frac{F_x(x,y)}{F_y(x,y)}
+\end{equation}
+provided $F_y(x,y)\neq0$.
+
+    \item[(b)] Use the result of part (a) to find $dy/dx$ when$ $y
+is defined implicitly in terms of $x$ by the equation $x^3 - y^2 = 0$. Check your result by explicitly
+solving for $y$ and differentiating.
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+Section 2.6:
+\\
+\textit{In Exercises 2-8, calculate the directional derivative of the
+given function f at the point \textbf{a} in the direction parallel to the
+vector \textbf{u}.}
+\\
+6. $ f (x, y, z) = xyz, \mathbf{a} = (-1, 0, 2), \mathbf{u}=\frac{2\mathbf{k}-\mathbf{i}}{\sqrt{5}}$
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+12. A ladybug (who is very sensitive to temperature) is
+crawling on graph paper. She is at the point $(3, 7)$ and
+notices that if she moves in the \textbf{i}-direction, the temperature increases at a rate of $3$ deg/cm. If she moves
+in the \textbf{j}-direction, she finds that her temperature decreases at a rate of$2$ deg/cm. In what direction should
+the ladybug move if
+\begin{enumerate}
+    \item[(a)] she wants to warm up most rapidly?
+    \item[(a)] she wants to cool off most rapidly? 
+    \item[(a)] she desires her temperature \textit{not} to change? 
+\end{enumerate}
+\end{problem}
+
+\newpage
+
+
+\begin{problem}
+\textit{In Exercises 16-19, find an equation for the tangent plane to
+the surface given by the equation at the indicated point $(x_0, y_0,
+z_0)$.}
+\\
+18. $2x^z + yz - x^2 y + 10 = 0, (x_0 , y_0 , z_0 ) = (1, -5, 5)$
+\end{problem}
+\end{document}
