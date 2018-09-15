@@ -2,8 +2,9 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{graphicx}
 
+
 % info for header block in upper right hand corner
-\name{Box#: \underline{\hspace{1cm}}(Name On Back)}
+\name{Box number: \underline{\hspace{1cm}} (name on back) }
 \class{Math 60: Section \underline{\hspace{1cm}}}
 \assignment{Assignment 2}
 \duedate{Due Date: 9/19/18}
@@ -19,15 +20,16 @@ Section 2.3:  R17, R23, 24, R31, 33, R38, 40, 42
 
 \begin{problem}
 Section 2.3: 
-\\\textit{Find the gradient $\nabla$f(\textbf{\mathbf{a}}), where f and \textbf{\mathbf{a}} are given in Exercises 18-24}
 \\
-24. $f(x,y,z)=\frac{x+y}{e^z}$
+\textit{Find the gradient $\nabla f(\mathbf{a})$, where $f$ and $\mathbf{a}$ are given in Exercises 18-25.}
+\\
+24. $f(x,y,z)=\cos{z \ln{\left(x+y^2\right)}}, \mathbf{a} = (e, 0, \pi/4)$
 \end{problem}
 
 \newpage
 
 \begin{problem}
-\textit{In Exercises 26-33, find the matrix D}\textbf{f}(\textbf{a})\textit{ if partial derivatives, where }\textbf{f}\textit{ and} \textbf{a} \textit{ are as indicated}
+\textit{In Exercises 26-33, find the matrix D}\textbf{f}(\textbf{a})\textit{ if partial derivatives, where }\textbf{f}\textit{ and} \textbf{a} \textit{ are as indicated.}
 \\
 33. \textbf{f}$(s, t)=(s^2, st, t^2)$, \textbf{a}$=(-1,1)$
 \end{problem}
@@ -44,10 +46,10 @@ Section 2.3:
 
 \begin{problem}
 42. Suppose that you have the following information concerning a differentiable function $f$:\\
-$f(2,3)=12$,$f(1.98,3)=12.1$,$f(2,3.01)=2.98$
+$f(2,3)=12$, $f(1.98,3)=12.1$, $f(2,3.01)=12.2.$
 \begin{enumerate}
-    \item[(a)] Give an approximation for the plane tangent to the graph of $f$ at $(2,3,12$
-    \item[(b)] Use the result of part (a) to estimate $f(1.98, 2.98)$
+    \item[(a)] Give an approximation for the plane tangent to the graph of $f$ at $(2,3,12).$
+    \item[(b)] Use the result of part (a) to estimate $f(1.98, 2.98).$
 \end{enumerate}
 
 \end{problem}
@@ -58,7 +60,7 @@ $f(2,3)=12$,$f(1.98,3)=12.1$,$f(2,3.01)=2.98$
 \begin{problem}
 Section 2.4:
 \\
-\textit{Verify the product and quotient rules(Proposition 4.2) for the pairs of functions given in Exercises 5-8.}
+\textit{Verify the product and quotient rules (Proposition 4.2) for the pairs of functions given in Exercises 5-8.}
 \\
 5. $f(x,y)=x^2y+y^3$, $g(x,y)=\frac{x}{y}$
 \end{problem}
@@ -67,7 +69,7 @@ Section 2.4:
 
 
 \begin{problem}
-\textit{For the functions given in Exercises 9-17 determine all second-order partial derivatives (include mixed partials).}
+\textit{For the functions given in Exercises 9-17 determine all second-order partial derivatives (including mixed partials).}
 \\
 17.$f(x,y, z)=x^2e^y+e^{2z}$
 
@@ -77,7 +79,7 @@ Section 2.4:
 
 
 \begin{problem}
-23. Let $f(x,y)=y^{3x}$. Give general formulas for $\partial^nf/\partial x^n$, $\partial^nf/\partial y^n$, and $\partial^nf/\partial z^n$, where $n\geq0$.
+23. Let $f(x,y)=ye^{3x}$. Give general formulas for $\partial^nf/\partial x^n$ and $\partial^nf/\partial y^n$, where $n\geq2$.
 \end{problem}
 
 \newpage
@@ -88,20 +90,14 @@ Section 2.4:
 \begin{equation}
     k(\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial y^2}+\frac{\partial^2 T}{\partial z^2})=\frac{\partial T}{\partial t}
 \end{equation}
-where $k$ is a positive constant. It models the temperature $T(x, y, z, t$ at the point $(x,y,z)$ and time $t$ of a body in space.
-\end{problem}
-
-\newpage
-
-
-\begin{problem}
+where $k$ is a positive constant. It models the temperature $T(x, y, z, t)$ at the point $(x,y,z)$ and time $t$ of a body in space.
 
 \begin{enumerate}
     \item[(a)] We examine a simplified version of the heat equation. Consider a straight wire "coordinatized" by $x$. Then the temperature $T(x,t)$ at time $t$ and position $x$ along the wire is modeled by the one-dimensional heat equation
     \begin{equation}
         k \frac{\partial^2 T}{\partial x^2}=\frac{\partial T}{\partial t}
     \end{equation}
-    Show that the function $T(x,t)=e^{-kt}cos(x)$ satisfies this equation. Note that if $t$ is held constant at value $t_0$. Graph the curves $z=T(x, T_0)$ for $t_0=0, 1, 10$, and use them to understand the graph of the surface $z=T(x,t)$ for $t\geq0$. Explain what happens to the temperature of the wire after a long period of time.
+    Show that the function $T(x,t)=e^{-kt}cos(x)$ satisfies this equation. Note that if $t$ is held constant at value $t_0$, then $T(x, t_0)$ shows how the temperature varies along the wire at time $t_0$. Graph the curves $z=T(x, T_0)$ for $t_0=0, 1, 10$, and use them to understand the graph of the surface $z=T(x,t)$ for $t\geq0$. Explain what happens to the temperature of the wire after a long period of time.
 \end{enumerate}
 \end{problem}
 
@@ -113,7 +109,7 @@ Section 2.5:\\
 7. Suppose that the following function is used to model
 the monthly demand for bicycles:
 \begin{equation}
-    P(x,y)=200+20\sqrt{0.1x+10}-12\sqrt[3]{y}
+    P(x,y)=200+20\sqrt{0.1x+10}-12\sqrt[3]{y}.
 \end{equation}
 In this formula, $x$ represents the price (in dollars
 per gallon) of automobile gasoline and $y$ represents the selling price (in dollars) of each bicycle.
@@ -123,7 +119,7 @@ Furthermore, suppose that the price of gasoline $t$ months from now will be
 \end{equation}
 and the price of each bicycle will be 
 \begin{equation}
-    y=200+2t-\sin\left(\frac{\pi t}{6}\right)
+    y=200+2t\sin\left(\frac{\pi t}{6}\right)
 \end{equation}
 At what rate will the monthly demand for bicycles be changing six months from now?
 \end{problem}
@@ -131,8 +127,8 @@ At what rate will the monthly demand for bicycles be changing six months from no
 \begin{problem}
 14. Suppose that $z = f (x + y, x - y)$ has continuous partial derivatives with respect to $u = x + y$ and $v =x - y$. Show that
 \begin{equation}
-    \frac{\partial w}{\partial u}
-    \frac{\partial w}{\partial u} = \left(\frac{\partial w}{\partial u}\right)^2-\left(\frac{\partial w}{\partial u}\right)^2
+    \frac{\partial z}{\partial x}
+    \frac{\partial z}{\partial y} = \left(\frac{\partial z}{\partial u}\right)^2-\left(\frac{\partial z}{\partial v}\right)^2.
 \end{equation}
 
 \end{problem}
@@ -140,8 +136,7 @@ At what rate will the monthly demand for bicycles be changing six months from no
 \newpage
 
 \begin{problem}
-\textit{In Exercises 19–27, calculate} D(f ◦ g) \textit{in two ways: (a) by first
-evaluating }f ◦ g \textit{and (b) by using the chain rule and the derivative matrices D}\textbf{f}\textit{and D}\textbf{g}
+\textit{In Exercises 19-27, calculate $D(\mathbf{f} \circ \mathbf{g})$ in two ways: (a) by first evaluating $\mathbf{f} \circ \mathbf{g} $ and (b) by using the chain rule and the derivative matrices $D\textbf{f}$ and $D\textbf{g}$.}
 \\
 24. \textbf{f}$(x,y,z)=(x^2y + y^2z, xyz, e^z)$, \textbf{g}$(t) = (t - 2, 3t + 7, t^3 )$
 \end{problem}
@@ -154,11 +149,11 @@ evaluating }f ◦ g \textit{and (b) by using the chain rule and the derivative m
 34. Suppose that $y$ is defined implicitly as a function $y(x)$
 by an equation of the form
 \begin{equation}
-    F(x, y) = 0
+    F(x, y) = 0.
 \end{equation}
 (For example, the equation $x^3 - y^2 = 0$ defines $y$ as
 two functions of $x$, namely, $y = x^{3/2}$ and $y = -x^{3/2}$ .
-The equation $sin(x y) - x^2y^7 + e^y = 0$, on the other
+The equation $\sin(xy) - x^2y^7 + e^y = 0$, on the other
 hand, cannot readily be solved for $y$ in terms of $x$. See
 the end of section 2.6 for more about implicit functions.)
 
@@ -170,7 +165,7 @@ differentiable functions, then
 \end{equation}
 provided $F_y(x,y)\neq0$.
 
-    \item[(b)] Use the result of part (a) to find $dy/dx$ when$ $y
+    \item[(b)] Use the result of part (a) to find $dy/dx$ when $y$
 is defined implicitly in terms of $x$ by the equation $x^3 - y^2 = 0$. Check your result by explicitly
 solving for $y$ and differentiating.
 \end{enumerate}
